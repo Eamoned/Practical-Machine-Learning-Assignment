@@ -1,18 +1,25 @@
-# Practical Machine Learning Assignment
+# Practical Machine Learning - Exercise Activity Recognition Prediction
 Eamon Corr  
 28 August 2016  
 
 ##Executive Summary
 This report constructs and tests various prediction models to predict the manner or how well participants perform barbell lifts (correctly or incorrectly). The 'classe' variable in the training set predicts the manner in which they did the exercise and we use data from accelerometers on the belt, forearm, arm, and dumbbell of 6 participants to make predictions.
-This report identifies the most relevant features and applies a model-based approach to detect mistakes in exercise techniques. Processing and analysis is carried out on the datasets and cross validation techniques applied. In this exercise we build and test various prediction models including Trees, boosting and Random Forest. The Out of Sample Error is then calculated using the most accurate model, Random Forest (accuracy of 0.994) in this case, and applied to a set of twenty different independent test cases.
+This report identifies the most relevant features and applies a model-based approach to detect mistakes in exercise techniques (See techniques listed below). Processing and analysis is carried out on the datasets and cross validation techniques applied. I then build and test various prediction models including Trees, boosting and Random Forest. Finally the Out of Sample Error is calculated using the most accurate model, in this case Random Forest (accuracy of 0.994), and applied to a set of twenty different independent test cases.
 
 More information is available from the Pontifical Catholic University of Rio de Janeiro website:
 [puc-rio.br/har](http://groupware.les.inf.puc-rio.br/har) (see the section on the Weight Lifting Exercise Dataset).
 
 I would like to thank PUC Rio for their generosity in providing access to their Human Activity Recognition datasets.
 
-##Loading & Data Processing
+Exercise Techniques:
 
+A Execution of exercise according to specification.
+B Throwing elbows to the front.
+C Lifting dumbbell only half way.
+D Lowering the dumbbell only halfway.
+E Throwing the hips to the front.
+
+##Loading & Data Processing
 
 ```r
 library(plyr);library(dplyr);library(caret)
