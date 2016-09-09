@@ -1,5 +1,5 @@
 # Practical Machine Learning Assignment
-EC  
+Eamon Corr  
 28 August 2016  
 
 ##Executive Summary
